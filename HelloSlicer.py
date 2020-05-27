@@ -1,6 +1,7 @@
 print("HelloSlicer")
 
+from FileReader.IgesReader import IgesReader
 from FileReader.STLReader import STLReader
 
-r = STLReader(r'FileReader\TestFiles\3DBenchy.STL')
+r = IgesReader(r'FileReader\TestFiles\EyepieceHolder.IGS')
 r.generatePath()
